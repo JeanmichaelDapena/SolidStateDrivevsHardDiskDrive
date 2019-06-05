@@ -1,0 +1,317 @@
+@charset "utf-8";
+/*
+Project 
+Version 4
+
+HDD vs SSD CSS Stylesheet
+Author: Jean-Michael Dapena
+Date: May 31, 2019
+
+Filename: styles.css
+
+
+*/
+
+/*structure*/ 
+
+
+.centerWebsite{   /**M3LO8 Demonstrate absolute or relative positioning (I did relative.)   */ 
+					/*M3LO4 Demonstrate removing container collapse by having a container element with a style rule that expands it around its floated content*/
+	
+	position: relative;/*M3LO9 Demonstrate fixed, static, or inherited positioning  I used static so it would flow with the page*/
+	max-width: 1100px;
+	margin: auto;
+	border-collapse: collapse;
+}
+
+html { /*M2LO12 Demonstrate how CSS can change presentation of page elements*/
+	background-color: white;
+	width: 100%; 
+	background-image: url(htmlBackground.png); /*M4LO2 Demonstrate the use of background images*/
+	margin-left: 20%;
+	margin-right: 20%;
+	background-attachment: fixed; 
+	
+}
+
+
+header { /*M2LO12 Demonstrate how CSS can change presentation of page elements*/
+	float: initial;
+	background-image: linear-gradient(white, green); /*M4LO4 Demonstrate the use of gradients*/
+	border: 5px solid black;
+	margin-top: 5%;
+	width: 100%;
+	height: 10%;
+} 
+
+body { /*M2LO12 Demonstrate how CSS can change presentation of page elements   M2LO5A Demonstrate contextual selectors*/
+	
+	background-color: grey; /*M2LO15 Apply colors using CSS*/
+    font-family:"Trebuchet MS", sans-serif;  /*M2LO3A Demonstrate style precedence in CSS*/ /*M2LO13 Demonstrate how CSS can change presentation of textual elements*/
+	box-shadow: 10px 10px green;  /*M4LO5 Demonstrate the use of text or box shadowing*/
+	width: 70%;
+}	
+
+
+body > p { /*M2LO5B Demonstrate contextual selectors */
+	font-size: 1.1em;
+	text-align: left;
+}
+
+p {
+	float: left;
+	width: 50%;
+	margin: 0px;
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+
+/*nav*/
+nav a { 
+	font-family: Ariel, Verdana, sans-serif;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+nav a:link, nav a:visited {  /* M2LO11A Demonstrate a pseudo-class selector and M2LO11B Demonstrate a pseudo-element selector*/
+	color: navy;
+	text-decoration: underline dotted blue;
+	
+}
+nav a:hover, nav a:active { /* M2LO11A Demonstrate a pseudo-class selector and M2LO11B Demonstrate a pseudo-element selector*/
+	color: orange;
+	background-color: black; /*M2LO15 Apply colors using CSS*/
+}
+
+
+/*Sections*/
+.information { /*M2LO6B Demonstrate class selectors.*/
+	float: left;
+}
+.information > h1 {
+	float: inherit;  /*M3LO2  inherits float value from parent */  /*M2LO3B Demonstrate style inheritance in CSS */
+	
+	font-size: 3em;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+
+}
+.information > h2 {   /*M2LO5A Demonstrate contextual selectors*/
+	float: inherit; /*M3LO2 Demonstrate floating elements   THis allows the picture and all of the settings to be inherited and keep a uniform look on the webpage.  */  
+	
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+.information > img { /*M2LO6B Demonstrate class selectors.  This is to put the images on the right side of the screen for information classes and their children.*/
+	padding-top: 0px;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: block;
+	width: 30%;  /* this is to reduce the size of the images.  */
+	float: right;  /*M3LO2 Demonstrate floating elements*/
+}
+
+
+/*ID Tags*/
+section#intro {   /*M2LO6A  Demonstrate a CSS id selector*/      
+	background-color: grey; /*M2LO15 Apply colors using CSS*/
+	
+}
+section#intro > h1 {
+	font-family: Impact, sans-serif; /*M2LO13 Demonstrate how CSS can change presentation of textual elements*/
+}
+
+img#hacker {
+	transform: rotateY(180deg);   /*M4LO8 Demonstrate the use of transformations for 2D or 3D images */
+	margin-left: 10px;
+	opacity: .5; /*M4LO6 Demonstrate the use of opacity/transparency for images*/
+	margin-bottom: 10px;
+}
+
+img#SSD {
+	padding-top: 0px;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: block;
+	width: 30%;  /* this is to reduce the size of the images.  */
+	float: right;  /*M3LO2 Demonstrate floating elements*/
+}
+img#HDD {
+	padding-top: 0px;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: block;
+	width: 30%;  /* this is to reduce the size of the images.  */
+	float: right;  /*M3LO2 Demonstrate floating elements*/
+}
+
+img#hacker:hover {
+	width: 60%;
+	height: 60%;
+	transform: scaleX(1);
+	-webkit-transform: scaleX(1); /*M3LO11 Demonstrate -prefix- style browser extensions use in CSS  
+							The purpose of this is to make a little easter egg where if you hover over the hacker, 
+							he "hacks" the webpage and makes the image larger.  I will add text to this later saying "You've been hacked!"  just for fun.  */
+}
+
+
+section#hddInfo {
+	border: 5px solid black;
+	background-color: white; /*M2LO15 Apply colors using CSS*/
+}
+section#hddInfo > h2 {
+	font-family: serif, sans-serif; /*M2LO13 Demonstrate how CSS can change presentation of textual elements*/
+
+}
+section#ssdInfo {
+	border: 5px solid black;
+	background-color: white;  /*M2LO15 Apply colors using CSS*/
+	
+}
+section#ssdInfo > h2 {
+	font-family: serif, sans-serif;  /*M2LO13*/
+}
+
+
+/* Footer */
+footer {
+	border: 5px solid black;
+	clear: both; /*M3LO3 Demonstrate a clearing float  */
+	display: block;
+}
+
+/* =================== */
+   /* FLEXBOX STYLES */ 		
+/* =================== */
+
+.V3-info {   /*M5LO7 Demonstrate use of properties of flexbox containers (I chose to use row wrap to make each div condense into rows as much as needed in case this website is viewed on a smaller screen.  )*/
+  height: 100px;
+  width: 200px;
+  display: flex;
+  flex-flow:row wrap;    
+  justify-content: center; /*M5LO6 Demonstrate use of properties of flexbox items    (I chose this item so the content inside the flex boxes would look nice.) */
+  align-items: center;
+  
+}
+ .box{
+	 height:100px;
+	 background-color: green;
+	 
+ }
+/* =================== */
+      /* MOBILE */ 		
+/* =================== */  		/*M5LO3 Use media queries to format a page differently for phones vs. PCs.   This allows the website to be viewed on a mobile device easily.  */
+@media only screen and (max-width: 640px) {
+   a#navicon {
+      display: block;
+   }
+   
+   header nav ul {
+      display: none;
+   }
+   
+   header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+}
+
+/* =============== */
+	/* DESKTOP */
+/* =============== */
+@media only screen and (min-width: 641px) {
+   header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}
+
+
+
+	/* Sources Dropdown Styling */  /*M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) 
+									The menu is at the bottom of the site and it opens the source files downwards*/
+	.dropbutton {
+	  margin: auto;
+	  background-color: green;
+	  color: white;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	  
+	}
+
+	/* Sources containter*/
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	/* dd-content*/
+	.dd-content {
+	  display: none;
+	  position: absolute;
+	  background-color: white;
+	  min-width: 160px;
+	 
+	 
+	}
+
+	/* Source links */
+	.dd-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+
+	/* dd menu shown with hover */
+	.dropdown:hover .dd-content {
+	  display: block;
+	}
+
+	/* Changed hover color of the sources when shown */
+	.dropdown:hover .dropbutton {
+	  background-color: green;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

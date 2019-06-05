@@ -1,0 +1,63 @@
+@charset "utf-8";
+/*
+Project 
+Version 4
+
+HDD vs SSD CSS Stylesheet
+Author: Jean-Michael Dapena
+Date: May 31, 2019
+
+Filename: forms.css
+
+
+*/
+
+/*M7LO11 Demonstrate how to format a form with CSS 
+(I decided to use this type of styling for my CSS file because 
+it keeps things aligned to the left, neat, and orderly.)*/
+.container{
+	display: block;
+	position: relative;
+	padding-left: 5%;
+	margin-bottom: 5%;
+}
+label {
+   display: block;
+   float: left;
+   clear: left;
+   margin: 5px;
+   width: 200px;
+   
+}
+
+input, select, textarea {
+   display: block;
+   float: left;
+   margin: 5px 0px;
+   width: 200px;
+}
+
+textarea {
+   height: 100px;
+}
+
+form p {
+   clear: left;
+   text-align: center;
+   padding-top: 40px;
+}
+
+input[type='submit'] {
+   background-color: rgb(150, 150, 200);
+   color: rgb(245,245,165);
+   border-radius: 20px;
+   float: none;
+   display: inline;
+   font-size: 1.1em;
+   height: 30px;
+   width: 150px;
+}
+
+input[type="radio"]{
+	float:left;
+}

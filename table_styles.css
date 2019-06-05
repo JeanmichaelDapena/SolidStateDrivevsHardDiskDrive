@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*
+Project 
+Version 4
+
+HDD vs SSD CSS Stylesheet
+Author: Jean-Michael Dapena
+Date: May 31, 2019
+
+Filename: table_styles.css
+
+
+*/
+
+
+/*Table Styles*/ /*M6LO7 Demonstrate how to format a table with CSS (These table styles make my HTML table look much better and formats it nicely.)*/
+
+table.comparisons {
+	width: 100%; 
+	border: 15px outset rgb(151,200,151); 
+	font-family: Ariel, serif, sans-serif;
+}
+
+table.comparisons tr {
+	height: 25px;
+}
+
+table.comparisons th, table.comparisons td {
+	border: 1px solid green;
+	vertical-align: top;
+	padding: 5px;
+}
+
+/*Table Captions*/
+table.programs caption {
+	caption-side: bottom;
+	text-align: center;
+}
+
+/*Table Columns*/
+
+col.capability {
+	width: 10%;
+	background-color: rgb(230, 270, 230);
+}
+
+col.hddColumn {
+	width: 11%;
+	background-color: rgb(20, 220, 220);
+}
+
+col.ssdColumn {
+	width: 11%;
+	background-color: rgb(20, 220, 220);
+}
+
+/*Table Headers*/
+
+table.comparisons thead {
+		color: white; 
+		background-color: rgb(160, 2, 15);
+}

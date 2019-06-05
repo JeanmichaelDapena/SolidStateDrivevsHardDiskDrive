@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<!--
+Project
+Version 4
+
+HDD vs SSD Homepage
+Author: Jean-Michael Dapena
+Date:  	May 31, 2019
+
+Filename: index.html
+-->
+	<title>
+	HDD vs SSD
+	</title>
+	<link href="styles.css" type="text/css" rel="stylesheet" />
+	<link href="table_styles.css" type="text/css" rel="stylesheet" />	<!--M1LO8 Demonstrate the use of external style sheets   -->
+	<link href="forms.css" type="text/css" rel="stylesheet" />
+</head>
+
+
+<body>
+<div class="centerWebsite">
+	<header>
+		<nav>
+			<ul>   <!--M1LO12 Create navigation using unordered lists-->
+				<li><a href="about.html">About This Page!</a></li>  <!--M1LO13A Demonstrate a hyperlink to another page on your site -->
+			<!--Add link to part of page-->
+			</ul>
+		</nav>
+	</header> 
+	
+
+	<section id="intro" class="information"> 
+		<h1>HARD DISK DRIVES VS SOLID STATE DRIVES</h1>
+		
+		<img id="hacker" src="hacker.jpg" width="200" height="145" alt="Hacker meme hacking with a laptop" > <!-- M1LO9 Demonstrate the use of inline images -->
+		
+			<p style="color: blue;"> <!--M2LO4B Demonstrate inline styles -->
+			    Hard Disk Drives (HDD) and Solid State Drives (SSD) are both forms of storage for 
+				computers.  They both store information differently and this webpage will go over the pros and cons of both, and help you decide which one is better for your lifestyle and needs!
+			</p>
+	</section>
+	
+	<section id="hddInfo" class="information"> <!-- M2LO4A Demonstrate embedded styles-->
+		<h2>Hard Disk Drives</h2>
+			<figure>
+				<figcaption>Example of a Hard Disk Drive</figcaption>
+				<img id= "HDD" src="HardDiskDrive.jpg" alt="Example of a Hard Disk Drive">
+			</figure>
+			<p> 
+			    Hard Disk Drives are more commonly used because they have the potential to hold gigantic amounts of data, and they are cheap to invest in.  
+				However, they can be affected by magnets and are prone to corruption if any moving parts are damaged, so if a magnet were to be close enough to your HDD, it would destroy the data inside.
+				An HDD has an actual disk inside of it and it reads information off of the disk. 
+			</p>
+			<p>
+				Hard disk drives can suffer from what is known as fragmentation.  This is what happens when the 
+				space on the hard disk begins to fill up and the large file's data is scattered throughout the disk.  
+			</p>
+	</section>
+	
+	<section id="ssdInfo" class="information"> 
+		<h2>Solid State Drives</h2> 
+			<figure> <!--M4LO1 Demonstrate the use of figure boxes */-->
+					<figcaption>Example of a Solid State Drive</figcaption>
+					<img id="SSD" src="SolidStateDrive.jpg" alt="Example of a Solid State Drive">
+			</figure>	
+			<p>
+			    Solid State Drives, or SSDs, are a newer forms of storage technology.  They boot up much faster than Hard Disk Drives due to there being no moving parts, 
+				and they access information within the drive much faster.  
+				Solid State Drives are not affected by magnets, so the data inside would be safe if one were to come near.  
+				The downside of Solid State drives is that they are more expensive than hard disk drives, and they do not store as much data as a hard disk.  
+			</p>
+			<p>
+				Solid state drives dont have the issue of becoming fragmented, because there is no physical read head.  This allows the data on the SSD to be stored anywhere
+				and still be accessed at lightning fast speeds.  SSD's are also very quiet since there are no moving parts.
+			</p>
+
+			<p> 	
+				EX.)  Solid State drives typically do not exceed 4TB for desktops, while HDD's are around 10TB max for desktops. 
+			</p>
+	</section>
+
+	<table class=comparisons>   <!--Tables-->   <!--M6LO3 Demonstrate how to create a table    This table is designed to show the differences between SSD and HDD in a clear and concise manner-->
+		<caption><h2>Comparing the two drives!</h2></caption>
+				<colgroup>
+					<col class="capability"/>
+					<col class="hddColumn" />
+					<col class="ssdColumn" /> <!--Span means that the class extends 5 columns -->
+				</colgroup>
+				
+				<thead>
+					<tr>
+						<th>Capabilities</th>
+						<th>Hard Disk Drive</th>
+						<th>Solid State Drive</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<th>Battery Life</th>
+						<td>Requires more power</td>
+						<td>Requires less power</td>
+					</tr>
+					<tr>
+						<th>Cost</th>
+						<td>$0.03 per gigabyte(inexpensive)</td>
+						<td>$0.20 per gigabyte(expensive)</td>
+					</tr>
+					<tr>
+						<th>Storage Capacity</th>
+						<td>Between 500GB and 2TB for laptops, and 10TB for desktops</td>
+						<td>Between 256GB and 1TB for laptops, 4TB for Desktops</td>
+					</tr>
+					<tr>
+						<th>Boot time</th>
+						<td>30 seconds-1 minute loading time, possibly 2-5 minutes if booting from an older system</td>
+						<td>10-13 seconds average, no moving components in an SSD</td>
+					</tr>
+					<tr>
+						<th>Noise</th>
+						<td>Noticable sounds due to moving components in the HDD</td>
+						<td>No sound due to no moving parts</td>
+					</tr>
+					<tr>
+						<th>Noise</th>
+						<td>Noticable sounds due to moving components in the HDD</td>
+						<td>No sound due to no moving parts</td>
+					</tr>
+					<tr>
+						<th>File Speed</th>
+						<td>Slower than an SSD</td>
+						<td>30% faster than your standard HDD (Everything is much faster and more smooth with an SSD</td>
+					</tr>
+					<tr>
+						<th>Affected by Magnetism?</th>
+						<td>Can erase all the data on a Hard Drive</td>
+						<td>Any type of magnetism will not damage an Solid State Drive</td>
+					</tr>
+					<tr>
+						<th>Encryption</th>
+						<td colspan="2">Supports Full Drive Encryption</td> <!--M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (This one spans 3 Columns)-->
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">In short, Solid State Drives are far superior than Hard Disk Drives, however due to the 
+												increased cost to purchase one, and the limited storage capacity of SSD's(if a 4 TB maximum limits you...) 
+												a Hard Disk Drive may be better for people new to upgrading computers and experimenting</td>
+					</tr>
+				</tfoot>
+				
+	</table>
+<section>
+      <h1>Website Update Notifications!</h1>
+      <p>Required Item (*)</p>
+	  <!--Form via post method-->
+		<form action="http://www.example/cg/register" method="post">
+	  
+			<!--Title Datalist-->
+			<div>
+				<label for="title">Title(If none of the following works, type your prefered title)</label>
+				<input type="text" name="title" id="titleBox" list="titleList">
+				<datalist id="titleList">
+					<option value="Mr."></option>
+					<option value="Mrs."></option>
+					<option value="Ms."></option>
+					<option value="Prof."></option>
+					<option value="Dr."></option>
+					
+				</datalist>
+			</div>
+			
+			<!--FIRST NAME-->
+				<label for="fnBox">First Name*</label> <!--M7LO8 Demonstrate the use of a selection list in a form-->
+				<input type="text" name="firstName" id="fnBox" required>
+				
+			<!--LAST NAME-->
+				<label for="lnBox">Last Name*</label>
+				<input type="text" name="lastName" id="lnBox" required>
+				
+			<!--EMAIL-->
+				<label for="mailBox">E-mail*</label>
+				<input type="email" name="email" id="mailBox" required>
+				
+			<!--PHONE NUMBER-->
+				<label for="phoneNumber">Phone Number</label><!--M7LO5 Demonstrate the use of a text box in a form-->
+				<input type="tel" name="phoneNumber" id="phoneNumber" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(nnn) nnn-nnnn">
+			
+			
+			<!--COUPONS-->
+				<label for="emailCoupons"></label>
+				<label class="container">
+					<input type="checkbox" name="couponChoice">Click here if you want coupons sent to your email <!--M7LO6 Demonstrate the use of check boxes in a form-->
+				</label>
+			
+			<!--AGE BOX-->
+				<label for="ageBox"> Are you 13+?* </label>
+					<label>
+						<input type="radio" id="ageBox" name="option_1" value="yes"> Yes <!--M7LO7 Demonstrate the use of radio buttons in a form-->
+					</label>
+					
+					<label>
+						<input type="radio" id="ageBox" name="option_2" value=""> No <!--M7LO7 Demonstrate the use of radio buttons in a form-->
+					</label>
+			
+			<!--TEXT AREA-->
+				<p>Leave a quick comment about this website!</p>
+				<textarea rows="4" cols="50"> <!--M7LO9 Demonstrate the use of a text area in a form-->
+				</textarea>
+				
+			<!--CONTINUE BUTTON-->
+				<p><input type="submit" name="Submit!" value="Continue"></p> <!--M7LO10 Demonstrate the use of a submit button in a form-->
+				
+			
+				
+		</form>
+   </section>
+   
+	
+
+
+	<footer>
+		<address>
+			Website Created by <a href="#">Jean-Michael Dapena</a>.<br> 
+			1600 Chester Ave, Bremerton, WA 98337<br>
+			CIS155
+		</address>
+	</footer>
+</div>
+</body>
+
+</html>
+
