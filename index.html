@@ -18,6 +18,8 @@ Filename: index.html
 	<link href="styles.css" type="text/css" rel="stylesheet" />
 	<link href="table_styles.css" type="text/css" rel="stylesheet" />	<!--M1LO8 Demonstrate the use of external style sheets   -->
 	<link href="forms.css" type="text/css" rel="stylesheet" />
+	
+
 </head>
 
 
@@ -82,7 +84,27 @@ Filename: index.html
 				EX.)  Solid State drives typically do not exceed 4TB for desktops, while HDD's are around 10TB max for desktops. 
 			</p>
 	</section>
-
+	
+	
+	<!-- IFRAME -->
+	
+	    <!--M8LO9  Demonstrate the use of the iframe element (HTML)-->
+		<div class=iframe_wiki>
+			<iframe src="https://simple.wikipedia.org/wiki/Solid-state_drive" name="iframe_ssd">
+			</iframe>
+			<p id="iframe_link"><a href="https://simple.wikipedia.org/wiki/Solid-state_drive" target="iframe_ssd">Wikipedia Article on Solid State Drives</a></p>
+		</div>
+		
+		
+		<video controls> <!--M8LO8 Demonstrate the use of the <video> element for embedding video in a Web page -->
+			<source src="SSDvsHDD.mp4" type="video/mp4">
+			
+			Your browser does not support the video tag.
+		</video>
+	
+	
+	
+	<!--TABLES-->
 	<table class=comparisons>   <!--Tables-->   <!--M6LO3 Demonstrate how to create a table    This table is designed to show the differences between SSD and HDD in a clear and concise manner-->
 		<caption><h2>Comparing the two drives!</h2></caption>
 				<colgroup>
@@ -155,8 +177,8 @@ Filename: index.html
 				
 	</table>
 <section>
-      <h1>Website Update Notifications!</h1>
-      <p>Required Item (*)</p>
+      <h1>Sign up for Website Update Notifications!</h1>
+      <p>Section Required (*)</p>
 	  <!--Form via post method-->
 		<form action="http://www.example/cg/register" method="post">
 	  
@@ -192,25 +214,25 @@ Filename: index.html
 			
 			
 			<!--COUPONS-->
-				<label for="emailCoupons"></label>
+				
 				<label class="container">
 					<input type="checkbox" name="couponChoice">Click here if you want coupons sent to your email <!--M7LO6 Demonstrate the use of check boxes in a form-->
 				</label>
 			
 			<!--AGE BOX-->
-				<label for="ageBox"> Are you 13+?* </label>
-					<label>
-						<input type="radio" id="ageBox" name="option_1" value="yes"> Yes <!--M7LO7 Demonstrate the use of radio buttons in a form-->
-					</label>
-					
-					<label>
-						<input type="radio" id="ageBox" name="option_2" value=""> No <!--M7LO7 Demonstrate the use of radio buttons in a form-->
-					</label>
-			
+					<label for="emailCoupons">Verify your age!</label>
+					<label for="ageBox"> Are you 13+?* </label>
+						
+						<label for="yes">Yes</label>
+						<input type="radio" name="option" id="yes"> <!--M7LO7 Demonstrate the use of radio buttons in a form-->
+						<label for="yes">No</label>	
+						<input type="radio" name="option" id="no"> <!--M7LO7 Demonstrate the use of radio buttons in a form-->
+						
+				
 			<!--TEXT AREA-->
-				<p>Leave a quick comment about this website!</p>
-				<textarea rows="4" cols="50"> <!--M7LO9 Demonstrate the use of a text area in a form-->
-				</textarea>
+				<p>Leave a quick comment about this website!</p> 
+				<textarea rows="4" cols="50"> 
+				</textarea> <!--M7LO9 Demonstrate the use of a text area in a form-->
 				
 			<!--CONTINUE BUTTON-->
 				<p><input type="submit" name="Submit!" value="Continue"></p> <!--M7LO10 Demonstrate the use of a submit button in a form-->
@@ -220,15 +242,21 @@ Filename: index.html
 		</form>
    </section>
    
+		<div id="fade">
+			<img class="bottom" src="thankYou.jpg" id="hello" />
+			<img class="top" src="mousehover.png" id="hello" />
+		</div>
 	
 
 
 	<footer>
+	
 		<address>
 			Website Created by <a href="#">Jean-Michael Dapena</a>.<br> 
 			1600 Chester Ave, Bremerton, WA 98337<br>
 			CIS155
 		</address>
+
 	</footer>
 </div>
 </body>

@@ -302,9 +302,50 @@ footer {
 	}
 
 
+/*iFrame CSS*/
+
+iframe {
+	display: inline-block;
+	height: 600px;
+	width: 500px;
+}
+
+div.iframe_wiki {
+	text-align: center;
+}
+
+	
+/*Video CSS*/ /*M8LO12 Demonstrate how to format media with CSS (The styling for this centers the video on the section below the iframe. )*/
+video {
+	width: 90%;
+	height: auto;
+	margin-left: 5%
+}
 
 
 
+#fade {
+	position:relative;
+	
+}
+
+#fade img {    /*M8LO10 Demonstrate a CSS animation or transition 
+				(I have a mouse icon that when hovered over, 
+				the image disapears and shows and underlying image underneath saying 
+				"thank you for coming)*/
+	height: 250px;
+	width: 250px;
+	position:absolute;
+	
+	-webkit-transition: opacity 3s ease-in-out;
+	-moz-transition: opacity 3s ease-in-out;
+	-o-transition: opacity 3s ease-in-out;
+	transition: opacity 3s ease-in-out;
+}
+
+#fade img.top:hover {
+  opacity:0;
+}
 
 
 
